@@ -1,2 +1,2 @@
-Miguel Bolaño Lopex
+Miguel Bolaño Lopez
 Juan Camilo Jaimes Avila
