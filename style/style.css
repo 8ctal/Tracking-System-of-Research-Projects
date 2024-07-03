@@ -1,42 +1,30 @@
-      /* CSS styles for the page layout */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            display: flex;
-        }
-        
-        .sidebar {
-            width: 250px;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        
-        .content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        
-        /* CSS styles for the menu bar */
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .menu li {
-            margin-bottom: 10px;
-        }
-        
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-        }
-        
-        .menu a:hover {
-            text-decoration: underline;
-        }
+/* Import Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+
+/* Sidebar menu styles */
+.sidebar-menu {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar-menu a:hover {
+    color: #007bff;
+}
