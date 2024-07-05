@@ -8,12 +8,12 @@ $connection = mysqli_connect($server, $user, $pass, $db);
 $connection->set_charset("utf8");
 
 if (!$connection) {
-    echo "No se ha podido conectar con el servidor: " . mysqli_connect_error();
+    echo "No se ha podido conectar con el   servidor: " . mysqli_connect_error();
 } else {
     echo "Hemos conectado al servidor <br>";
 }
 
-mysqli_close($connection);
+/* mysqli_close($connection);
 
-echo "Fuera";
+echo "Fuera"; */
 ?>

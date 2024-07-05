@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
+
     <!-- Vendor CSS Files -->
 
     <link href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -15,11 +15,11 @@
     <!-- LOGIN CSS -->
     <link href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/css/login.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    
+
     <!-- <link rel="stylesheet" href="css/all.min.css"> -->
     <!-- <link rel="stylesheet" href="css/fontawesome.min.css"> -->
     <link href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/img/LogoHDSP.png" rel="shortcut icon">
-    <title>Inicio de sesión</title>
+    <title>Registro</title>
 </head>
 
 <body>
@@ -30,16 +30,16 @@
         </div>
         <div class="login-content">
             <form method="post" action="">
-                <img src="http://localhost/DB_project/Tracking-System-of-Researching-Projects\assets\img\LogoHDSP.png">
+                <img src="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/img/LogoHDSP.png">
                 <h2 class="title">BIENVENIDO</h2>
                 <?php
-                @include "../models/loginController.php";
+                @include "../models/registerController.php";
                 
                 if(isset($error)){
                    foreach($error as $error){
                       echo '<span class="error-msg">'.$error.'</span>';
                    };
-                
+            
                 }
                 ?>
                 <div class="input-div one">
@@ -53,11 +53,41 @@
                 </div>
                 <div class="input-div pass">
                     <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="email" id="email" class="input" name="email">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
                         <i class="fas fa-lock"></i>
                     </div>
                     <div class="div">
                         <h5>Contraseña</h5>
-                        <input type="password" id="input" class="input" name="password">
+                        <input type="password" id="password" class="input" name="password">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Confirmar Contraseña</h5>
+                        <input type="password" id="confirm_password" class="input" name="confirm_password">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Tipo de usuario</h5>
+                        <select id="tipo_usuario" name="tipo_usuario" class="input">
+                            <option value="student">Estudiante</option>
+                            <option value="teacher">Profesor</option>
+                        </select>
                     </div>
                 </div>
                 <div class="view">
@@ -66,9 +96,9 @@
 
                 <div class="text-center">
                     <a class="font-italic isai5" href="">Olvidé mi contraseña</a>
-                    <a class="font-italic isai5" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/register.php">Registrarse</a>
+                    <a class="font-italic isai5" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/login.php">Ya tengo cuenta, ingresar</a>
                 </div>
-                <input name="submit" class="btn" type="submit" value="INICIAR SESION">
+                <input type="submit" class="btn" name="submit" value="REGISTRARME">
             </form>
         </div>
     </div>
