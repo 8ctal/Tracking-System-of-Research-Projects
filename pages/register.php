@@ -42,6 +42,15 @@
             
                 }
                 ?>
+                 <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Documento</h5>
+                        <input id="documento" type="text" class="input" name="documento">
+                    </div>
+                </div>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
@@ -85,8 +94,9 @@
                     <div class="div">
                         <h5>Tipo de usuario</h5>
                         <select id="tipo_usuario" name="tipo_usuario" class="input">
-                            <option value="student">Estudiante</option>
-                            <option value="teacher">Profesor</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="profesor">Profesor</option>
+                            <option value="director">Director</option>
                         </select>
                     </div>
                 </div>

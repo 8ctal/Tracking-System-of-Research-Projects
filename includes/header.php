@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,44 +31,56 @@
   <!-- Template Main CSS File -->
   <link href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/css/style.css" rel="stylesheet">
   <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        select, button {
-            padding: 10px;
-            font-size: 16px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    select,
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 
 </head>
 
@@ -243,16 +257,16 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/img/userHenry.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Henry</span>
+            <img src="http://localhost/DB_project/Tracking-System-of-Researching-Projects/assets/img/Sample_User_Icon.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"> <?php echo $_SESSION['user']; ?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>
-                <?php echo $_SESSION["usuario"];?> 
+                <?php echo $_SESSION['user']; ?>
               </h6>
-              <span>Director y creador</span>
+              <span> <?php echo $_SESSION['type']; ?></span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -261,7 +275,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                 <i class="bi bi-person"></i>
-                <span>My Profile</span>
+                <span>Mi perfil</span>
               </a>
             </li>
             <li>
@@ -271,7 +285,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                 <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
+                <span>Configuracion de la cuenta</span>
               </a>
             </li>
             <li>
@@ -281,7 +295,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                 <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
+                <span>Necesita ayuda?</span>
               </a>
             </li>
             <li>
@@ -291,7 +305,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/models/logoutController.php">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Cerrar sesion</span>
               </a>
             </li>
 

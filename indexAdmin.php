@@ -1,7 +1,7 @@
-<?php 
+<?php
 @include "./models/conecction.php";
 @include "./includes/header.php";
-@include "./includes/sidebar.php";
+@include "./includes/sidebarAdmin.php";
 @include "./includes/footer.php";
 ?>
 <main id="main" class="main">
@@ -10,4 +10,3 @@
     </section>
 
 </main><!-- End #main -->
-

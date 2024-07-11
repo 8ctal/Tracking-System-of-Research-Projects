@@ -4,7 +4,7 @@
    <ul class="sidebar-nav" id="sidebar-nav">
 
      <li class="nav-item">
-       <a class="nav-link" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/index.php">
+       <a class="nav-link " href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/indexAdmin.php">
          <i class="bi bi-grid"></i>
          <span>Menú principal</span>
        </a>
@@ -92,8 +92,13 @@
            </a>
          </li>
          <li>
-           <a href="../pages/charts-echarts.html">
-             <i class="bi bi-circle"></i><span>ECharts</span>
+           <a href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/editarProyectos.php">
+             <i class="bi bi-circle"></i><span>Editar</span>
+           </a>
+         </li>
+         <li>
+           <a href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/agregarProyectos.php">
+             <i class="bi bi-circle"></i><span>Agregar</span>
            </a>
          </li>
        </ul>
@@ -125,7 +130,7 @@
      <li class="nav-heading">....</li>
 
      <li class="nav-item">
-       <a class="nav-link collapsed" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/allInstitutions.php">
+       <a class="nav-link collapsed" href="http://localhost/DB_project/Tracking-System-of-Researching-Projects/pages/adminInstitutions.php">
          <i class="bi bi-building"></i>
          <span>Instituciones</span>
        </a>
